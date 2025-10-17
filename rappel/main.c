@@ -23,12 +23,13 @@ int main() {
     //2. Affichage des valeurs avant l'échange
     verre_ross = &biere_sans_alcool;
     verre_bob = &biere_blonde;
-    printf("Le verre de ross est composé de %d et le verre de bob est composé de %d \n", *verre_ross, *verre_bob);
+    printf("Bière dans le verre de ross : %d\n", *verre_ross);
+    printf("Bière dans le verre de bob : %d\n", *verre_bob);
 
     //3. Échange du contenu des pointeurs
     swap(verre_ross, verre_bob);
 
     //4. Affichage des valeurs après l'échange
-    printf("Dans le verre de Ross il y a maintenant %d ml et dans le verre de bob il y a maintenant %d ml\n",*verre_ross, *verre_bob);
-
+    printf("Bière dans le verre de ross : %d\n", *verre_ross);
+    printf("Bière dans le verre de bob : %d\n", *verre_bob);
 }
